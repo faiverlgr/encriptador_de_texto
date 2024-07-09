@@ -135,9 +135,11 @@ function recibeTextoElemento(parBoton){
     }
     
     if (!esValido){
-        document.querySelector('#sin__mensaje').removeAttribute('hidden');
-        document.querySelector('#con__mensaje').setAttribute('hidden', 'true');
-        //console.log("Revise el texto. Contiene caracteres no validos: " + parTexto)
+        document.getElementById('sin__mensaje').style.display = "block";
+        document.getElementById('con__mensaje').style.display = "none";
+        document.getElementById('caja__copiado').style .display = 'none';
+
+        console.log("Revise el texto. Contiene caracteres no validos: " + parTexto)
     }else{
         if (parBoton == 1){
             var textoSeguro = encriptar(parTexto)
@@ -149,15 +151,34 @@ function recibeTextoElemento(parBoton){
             
             //console.log("el texto devuelto es: " + textoSeguro)
         }
-        document.querySelector('#sin__mensaje').setAttribute('hidden', 'true');
-        document.querySelector('#con__mensaje').removeAttribute('hidden');
+        document.getElementById('sin__mensaje').style.display = 'none';
+        document.getElementById('con__mensaje').style.display = 'block';
+        document.getElementById('caja__copiado').style .display = 'block';
+
         let fraseHTML = document.getElementById("texto__respuesta");
         fraseHTML.innerHTML = textoSeguro
-        
-        
+
     }    
     return esValido
 }
+document.getElementById('con__mensaje').style.display = 'none';
+document.getElementById('caja__copiado').style .display = 'none';
+document.getElementById('sin__mensaje').style .display = 'block';
 
+/*
+document.getElementById('sin__mensaje').style .display = 'none';
+*/
 //console.log(recibeTextoElemento("elsa"));
 //console.log(char("d"));
+
+function copy(){
+    let texto = document.getElementById('texto__respuesta').innerHTML;
+    
+    try {
+        navigator.clipboard.writeText(texto);
+        //console.log('Contenido copiado al portapapeles');
+        } catch (err) {
+        console.error('Error al copiar: ', err);
+    }
+    console.log('copio: ' + texto);
+}

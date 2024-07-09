@@ -20,8 +20,13 @@ body{
     box-sizing: border-box;
 }
 
+.logo_titulo{
+
+    padding: 2% 2%;
+}
+
 .main{
-    padding: 8% 15%;
+    padding: 0% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +36,7 @@ body{
     width: 680px;
     display: flex;
     flex-direction: column;
-    gap: 470px;
+    gap: 500px;
 }
 
 .contenido__frase{
@@ -47,7 +52,8 @@ body{
     line-height: 150%;
    
 }
-    
+
+
 .presentacion__acciones{
     display: flex;
     box-sizing: border-box;
@@ -61,6 +67,7 @@ body{
     text-align: center;
     padding: 21.5px 0;
     border-radius: 24px;
+    font-family: var(--fuente-inter);
     font-size: 16;
     text-decoration: none;
     color: var(--white);
@@ -72,44 +79,59 @@ body{
     text-align: center;
     padding: 21.5px 0;
     border-radius: 24px;
+    font-family: var(--fuente-inter);
+    color: var(--dark-blue-300);
     font-size: 16;
     text-decoration: none;
-    color: var(--dark-blue-300);
-     
+    
 }
 
 .base__contenido__mensaje{
     width: 400px;
     height: 944px;
-    background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 48px;
-    text-decoration: none;
-    box-shadow: #dfdfdf;
-
+    box-shadow: 14px 14px 20px 0px var(--gray);
 }
 
 .contenido__sin__mensaje{
-    height: 944px;
-    display: flex;
-    box-sizing:border-box;
-    flex-direction: column;    
-    justify-content: center;
-    gap: 32px;
+    padding: 50% 0%;
     /* display: none; */
 }
 
 .contenido__con__mensaje{
-    display: flex;
-    box-sizing: border-box;
-    width: 336;
-    height: 781;
+    height: 720px;
+    /* display: none;  */
+}
+
+.texto__respuesta{
     padding: 12% 8%;
-    gap: 32px;
+    width: 336;
+    height: 720;
     font-family: var(--fuente-inter);
     font-size: 24px;
     color: var(--gray400);
     line-height: 150%;
-    display: none; 
+}
+
+.caja__boton__copiar{
+    height: 224px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.accion__copiar{
+    margin: 34% 8%;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    border-color: var(--dark-blue-300);
+    background-color: var(--white);
+    font-family: var(--fuente-inter);
+    color: var(--dark-blue-300);
+    font-size: 16;
 }
 
 .presentacion__advertencia{
@@ -125,6 +147,7 @@ body{
     font-size: 24px;
     font-weight: bold;
     width: 372px;
+    height: 67px;
     text-align: center;
 
 }
@@ -134,5 +157,6 @@ body{
     font-family: var(--fuente-inter);
     font-size: 16px;
     width: 372px;
+    height: 67px;
     text-align: center;
 }
