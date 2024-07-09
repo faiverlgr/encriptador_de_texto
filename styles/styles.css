@@ -28,10 +28,10 @@ body{
 }
 
 .main__seccion__contenido{
-    width: 615px;
+    width: 680px;
     display: flex;
     flex-direction: column;
-    gap: 400px;
+    gap: 470px;
 }
 
 .contenido__frase{
@@ -50,11 +50,13 @@ body{
     
 .presentacion__acciones{
     display: flex;
+    box-sizing: border-box;
+    justify-content: center ;
     gap: 24px;
 }
 
 .acciones__encripta{
-    width: 280px;
+    width: 328px;
     background-color: var(--dark-blue-300);
     text-align: center;
     padding: 21.5px 0;
@@ -65,7 +67,7 @@ body{
 }
 
 .acciones__descifra{
-    width: 280px;
+    width: 328px;
     background-color: var(--gray);
     text-align: center;
     padding: 21.5px 0;
@@ -76,25 +78,22 @@ body{
      
 }
 
-.contenido__mensaje{
+.base__contenido__mensaje{
     width: 400px;
     height: 944px;
     background-color: #ffffff;
     border-radius: 48px;
-    gap: 40px;
     text-decoration: none;
     box-shadow: #dfdfdf;
-    justify-content: center;
-    
+
 }
 
 .contenido__sin__mensaje{
+    height: 944px;
     display: flex;
-    box-sizing:content-box;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    flex-direction: column;
+    box-sizing:border-box;
+    flex-direction: column;    
+    justify-content: center;
     gap: 32px;
     /* display: none; */
 }
@@ -102,12 +101,9 @@ body{
 .contenido__con__mensaje{
     display: flex;
     box-sizing: border-box;
-    flex-direction: column;
     width: 336;
     height: 781;
-    padding: 10% 5%;
-    justify-content: space-between;
-    align-items: center;
+    padding: 12% 8%;
     gap: 32px;
     font-family: var(--fuente-inter);
     font-size: 24px;

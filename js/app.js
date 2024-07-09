@@ -12,6 +12,7 @@ tambien devolver una palabra encriptada para su version original
 d
 */
 
+
 //variables
 
 var listaVocales = new Array(2)
@@ -113,7 +114,7 @@ function encriptar(parTextoOriginal){
 
 function recibeTextoElemento(parBoton){
     let parTexto = document.getElementById('texto__escrito').value;
-    //console.log("textoRecibido: " + parTexto)
+    console.log("textoRecibido: " + parTexto)
     
     //variable para validar el texto
     let esValido = true
