@@ -21,15 +21,15 @@ body{
 }
 
 .logo_titulo{
-
     padding: 2% 2%;
 }
 
 .main{
     padding: 0% 15%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 108px;
 }
 
 .main__seccion__contenido{
@@ -52,7 +52,6 @@ body{
     line-height: 150%;
    
 }
-
 
 .presentacion__acciones{
     display: flex;
@@ -83,10 +82,11 @@ body{
     color: var(--dark-blue-300);
     font-size: 16;
     text-decoration: none;
-    
 }
 
 .base__contenido__mensaje{
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 944px;
     background-color: var(--white);
@@ -115,15 +115,16 @@ body{
 }
 
 .caja__boton__copiar{
+    width: 400px;
     height: 224px;
     display: flex;
     box-sizing: border-box;
-    align-items: flex-end;
     justify-content: center;
+
 }
 
 .accion__copiar{
-    margin: 34% 8%;
+    margin: 30% 8%;
     width: 336px;
     height: 67px;
     border-radius: 24px;
