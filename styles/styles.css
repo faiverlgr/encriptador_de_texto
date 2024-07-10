@@ -30,6 +30,7 @@ body{
 }
 
 .main{
+    height: 944px;
     padding: 0% 10%;
     display: flex;
     box-sizing: border-box;
@@ -42,7 +43,7 @@ body{
     /* height: 90%; */
     display: flex;
     flex-direction: column;
-    row-gap: 500px;
+    row-gap: 57%;
 }
 
 .contenido__frase{
@@ -94,7 +95,7 @@ body{
 }
 
 .base__contenido__mensaje{
-    width: 412px;
+    width: 400px;
     background-color: var(--white);
     border-radius: 48px;
     box-shadow: 14px 14px 20px 0px var(--gray);
@@ -107,29 +108,30 @@ body{
     row-gap: 50px;
 }
 
-.contenido__con__mensaje{
+.contenido__con__mensaje{   
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    justify-items: space-between;
-    gap: 500px
-
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 100px;
     /* height: 720px; */
-    /* display: none;  */
 }
 
 .texto__respuesta{
-    padding: 12% 8%;
-    width: 336;
-    height: 720;
+    margin: auto;
+    padding: 12% 8% 12% 8%;
+    width: 70%;
     font-family: var(--fuente-inter);
     font-size: 1.5rem;
     color: var(--gray400);
     line-height: 150%;
+    text-align:unset ;
 }
 
 .accion__copiar{
     margin: auto;
-    width: 336px;
+    width: 90%;
     height: 67px;
     border-radius: 24px;
     border-color: var(--dark-blue-300);
@@ -164,10 +166,6 @@ body{
     text-align: center;
 }
 
-.imagen__mensaje{
-    /* align-content: center; */
-}
-
 
 @media (max-width: 1200px) {
     .imagen__mensaje{
@@ -182,6 +180,11 @@ body{
     .main__seccion__contenido{
         width: 100%;
         gap: 10rem;
+    }
+
+    .contenido__frase{
+        width: 90%;
+        font-size: 1rem;
     }
     
     .base__contenido__mensaje{
@@ -210,6 +213,10 @@ body{
 
     .sin__mensaje__titulo{
         margin: 40px 0px 0px;
+    }
+
+    .texto__respuesta{
+        padding: 2% 8% 12% 8%;
     }
 
     .accion__copiar{
