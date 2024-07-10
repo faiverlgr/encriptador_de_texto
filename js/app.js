@@ -137,7 +137,7 @@ function recibeTextoElemento(parBoton){
     if (!esValido){
         document.getElementById('sin__mensaje').style.display = "block";
         document.getElementById('con__mensaje').style.display = "none";
-        document.getElementById('caja__copiado').style .display = 'none';
+        document.getElementById('boton__copiado').style .display = 'none';
 
         console.log("Revise el texto. Contiene caracteres no validos: " + parTexto)
     }else{
@@ -153,7 +153,7 @@ function recibeTextoElemento(parBoton){
         }
         document.getElementById('sin__mensaje').style.display = 'none';
         document.getElementById('con__mensaje').style.display = 'block';
-        document.getElementById('caja__copiado').style .display = 'block';
+        document.getElementById('boton__copiado').style .display = 'block';
 
         let fraseHTML = document.getElementById("texto__respuesta");
         fraseHTML.innerHTML = textoSeguro
@@ -162,7 +162,7 @@ function recibeTextoElemento(parBoton){
     return esValido
 }
 document.getElementById('con__mensaje').style.display = 'none';
-document.getElementById('caja__copiado').style .display = 'none';
+document.getElementById('boton__copiado').style .display = 'none';
 document.getElementById('sin__mensaje').style .display = 'block';
 
 /*

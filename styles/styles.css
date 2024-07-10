@@ -6,7 +6,6 @@
     --white: #ffffff;
     --gray: #D8DFE8;
     --gray400: #495057;
-
     --fuente-inter: 'Inter', sans-serif;
 }
 
@@ -31,18 +30,19 @@ body{
 }
 
 .main{
-    padding: 0% 15%;
+    padding: 0% 10%;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
-    gap: 108px;
+    column-gap: 128px;
 }
 
 .main__seccion__contenido{
     width: 680px;
+    /* height: 90%; */
     display: flex;
     flex-direction: column;
-    gap: 500px;
+    row-gap: 500px;
 }
 
 .contenido__frase{
@@ -56,7 +56,6 @@ body{
     font-size: 2rem;
     color: var(--dark-blue-300);
     line-height: 150%;
-   
 }
 
 .presentacion__acciones{
@@ -64,6 +63,10 @@ body{
     box-sizing: border-box;
     justify-content: center ;
     gap: 24px;
+}
+
+.main_comandos{
+    height: 20%;
 }
 
 .acciones__encripta{
@@ -91,7 +94,7 @@ body{
 }
 
 .base__contenido__mensaje{
-    width: 400px;
+    width: 412px;
     background-color: var(--white);
     border-radius: 48px;
     box-shadow: 14px 14px 20px 0px var(--gray);
@@ -99,18 +102,17 @@ body{
 
 .contenido__sin__mensaje{
     display: flex;
-    align-self: flex-end;
-    /* display: none; */
-}
-
-.nueva__clase{
-    right: 100%;
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
+    row-gap: 50px;
 }
 
 .contenido__con__mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    gap: 500px
+
     /* height: 720px; */
     /* display: none;  */
 }
@@ -125,17 +127,8 @@ body{
     line-height: 150%;
 }
 
-.caja__boton__copiar{
-    width: 400px;
-    height: 224px;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-
-}
-
 .accion__copiar{
-    margin: 30% 8%;
+    margin: auto;
     width: 336px;
     height: 67px;
     border-radius: 24px;
@@ -160,7 +153,6 @@ body{
     width: 372px;
     height: 67px;
     text-align: center;
-
 }
 
 .sin__mensaje__texto{
@@ -215,4 +207,15 @@ body{
         padding: 0px, 0px, 0px, 0px;
         width: 100%;
     }
+
+    .sin__mensaje__titulo{
+        margin: 40px 0px 0px;
+    }
+
+    .accion__copiar{
+        margin: auto;
+        width: 95%;
+    }
+
+
 }
