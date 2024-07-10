@@ -9,6 +9,7 @@
 <body>
     <div class="logo_titulo">
         <img src="./assets/Logo.png" alt="">
+        <h1>Encriptador de texto</h1>
     </div>
     <main class="main">
         <section class="main__seccion__contenido">
@@ -23,7 +24,7 @@
                 </div>
             </div>
         </section>
-        <div class="base__contenido__mensaje">
+        <section class="base__contenido__mensaje">
             <div id="con__mensaje" class="contenido__con__mensaje">  
                 <p class="texto__respuesta" id="texto__respuesta">ana</p>
             </div>
@@ -31,11 +32,13 @@
                 <button onclick="copy()" class="accion__copiar">Copiar</button>
             </div>    
             <div id="sin__mensaje" class="contenido__sin__mensaje">
-                <img src="./assets/Muñeco.png" alt="">
-                <h2 class="sin__mensaje__titulo">Ningun mensaje fue encontrado</h2>
-                <p class="sin__mensaje__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                <div class="nueva__clase">
+                    <img class="imagen__mensaje" src="./assets/Muñeco.png" alt="">
+                    <h2 class="sin__mensaje__titulo">Ningun mensaje fue encontrado</h2>
+                    <p class="sin__mensaje__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>            
             </div>
-        </div>
+        </section>
     </main>
     <script src="./js/app.js"></script>
 </body>
