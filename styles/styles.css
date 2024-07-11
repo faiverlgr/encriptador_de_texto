@@ -30,7 +30,6 @@ body{
 }
 
 .main{
-    height: 944px;
     padding: 0% 10%;
     display: flex;
     box-sizing: border-box;
@@ -40,10 +39,9 @@ body{
 
 .main__seccion__contenido{
     width: 680px;
-    /* height: 90%; */
     display: flex;
     flex-direction: column;
-    row-gap: 57%;
+    row-gap: 37%;
 }
 
 .contenido__frase{
@@ -66,7 +64,7 @@ body{
     gap: 24px;
 }
 
-.main_comandos{
+.main__comandos{
     height: 20%;
 }
 

@@ -16,7 +16,7 @@
             <div class="main__contenido__texto">        
                 <textarea id="texto__escrito" class="contenido__frase" placeholder="Ingrese el texto aqui"></textarea>
             </div>
-            <div class="main_comandos">
+            <div class="main__comandos">
                 <p class="presentacion__advertencia">Solo letras minusculas y sin acentos</p> 
                 <div class="presentacion__acciones">
                     <button onclick="recibeTextoElemento(1)" class="acciones__encripta">Encriptar</button>
@@ -25,15 +25,15 @@
             </div>
         </section>
         <section class="base__contenido__mensaje">
-            <section id="con__mensaje" class="contenido__con__mensaje">  
+            <div id="con__mensaje" class="contenido__con__mensaje">  
                 <p class="texto__respuesta" id="texto__respuesta">ana</p>
                 <button id="boton__copiado" onclick="copy()" class="accion__copiar">Copiar</button>
-            </section>
-            <section id="sin__mensaje" class="contenido__sin__mensaje">
+            </div>
+            <div id="sin__mensaje" class="contenido__sin__mensaje">
                 <img class="imagen__mensaje" src="./assets/Muñeco.png" alt="">
                 <h2 class="sin__mensaje__titulo">Ningun mensaje fue encontrado</h2>
                 <p class="sin__mensaje__texto">Ingresa el texto que desees encriptar o desencriptar</p>
-            </section>
+            </div>
         </section>
     </main>
     <script src="./js/app.js"></script>
